@@ -1,4 +1,5 @@
 # README
+<<<<<<< HEAD
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
@@ -26,3 +27,6 @@ The Doggy Dudes is a business based in Deerfield, IL.  This web application is d
 * Deployment instructions
 
 * ... -->
+=======
+[ ![Codeship Status for bshea822/Doggy_dudes](https://app.codeship.com/projects/31c6e7b0-b369-0136-3d03-1e21b4d27ea1/status?branch=master)](https://app.codeship.com/projects/310958)
+>>>>>>> 7ec1b01a9bf69dd85cef9f7b2da8f467a449e383
