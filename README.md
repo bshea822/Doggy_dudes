@@ -72,14 +72,26 @@ Last year, my brother started a company that provides a pick-up service for peop
 
     As an unauthenticated user
     I want to sign up
-    So that I can gain make a profile
+    So that I can make a account
 
       Acceptance Criteria:
-      * There is an option to 
+      * There is an option to sign in on the page if I am not already authenticated
+      * I am presented with a form that asks for: first name, last name, email address, phone number, physical address, password, and password confirmation
+      * If I've entered the right credentials, I receive an onscreen message saying that I created an account and am signed in
+      * If I didn't enter valid credentials I: receive an onscreen error message, am left unauthenticated, and am left on the form page with my information still in the form
+      * If I am already authenticated I don't have the option to sign in
+
 
     As an unauthenticated user
     I want to be able to edit or destroy my profile
     So I can make changes relevant to the company's services
+
+      Acceptance Criteria:
+      * In the account profile page, there is an option to edit my profile
+      * If I click on the link, it will bring me present me with a form to change my account details
+      * In the account profile page, there is an option to delete my profile
+      * If I click on the link, it will ask me to confirm my decision by entering my password
+      * If I confirm,
 
     As a user
     I want to be able to
