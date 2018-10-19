@@ -51,7 +51,6 @@ Last year, my brother started a company that provides a pick-up service for peop
       * There is an option to click on any of the three links if I'm not already authenticated
       * If I click on "About Us", I should see a description of the company
       * If I click on "Services", I should see a list of services and a map depicting the geographical serviceable area
-      * If I click on "Forms", I should have the options to fill out a "New Client" form or "Free Trial" form
 
     As an unauthenticated user
     I want to see a home page, with pictures from the company's Instagram
@@ -81,8 +80,16 @@ Last year, my brother started a company that provides a pick-up service for peop
       * If I didn't enter valid credentials I: receive an onscreen error message, am left unauthenticated, and am left on the form page with my information still in the form
       * If I am already authenticated I don't have the option to sign in
 
+    As a user
+    I want to be able to view my profile
+    So I can review my account details and scheduled pickups
 
-    As an unauthenticated user
+      Acceptance Criteria:
+      * There should be an option to view the user's account
+      * The page should show the user's account details
+      * The page should also show the user's scheduled appointments with the company's service
+
+    As a user
     I want to be able to edit or destroy my profile
     So I can make changes relevant to the company's services
 
@@ -91,10 +98,82 @@ Last year, my brother started a company that provides a pick-up service for peop
       * If I click on the link, it will bring me present me with a form to change my account details
       * In the account profile page, there is an option to delete my profile
       * If I click on the link, it will ask me to confirm my decision by entering my password
-      * If I confirm,
+      * If I confirm, my account info is deleted, I become unauthenticated, and am brought to the home page
 
     As a user
-    I want to be able to
+    I want to be able to add a dog to my profile
+    So I can either schedule pickups or schedule a free trial
+
+      Acceptance Criteria:
+      * In the account profile page, there is an option to "add a dog"
+      * If I click on the link, it will present a form that asks for basic info about the dog
+      * The form will also include a Terms of Service & Client Agreement that the user must agree to
+      * If I've entered the right credentials, I receive an onscreen message saying that I added a dog and am redirected to my account profile page where the new dog is visible
+      * If I didn't enter valid credentials I: receive an onscreen error message and am left on the form page with my information still in the form
+
+    As a unauthenticated user
+    I want to be able to schedule a free trial for my a dog
+    So I can try out the provided service
+
+      Acceptance Criteria:
+      * I should see an option for a free trial
+      * If I follow the link I should be brought to a page that asks me to sign up or sign in
+      * If I sign in, if I have already used the service or free trial I am redirected to my account profile with an error message
+      * If I sign in and have not used the free trial or service, I will be prompted to create a dog if there are none in my account or to select a dog if there is
+      * Once a dog has been created or selected I can schedule an appointment by selecting a date and play group time
+
+    As a user
+    I want to be able to schedule my dog for a pickup
+    So they can have fun
+
+      Acceptance Criteria:
+      * I should see an option to schedule appointments
+      * If I follow the link, it should first ask me to select a dog or create a new dog
+      * If I need to create a new dog, I am redirected to the "add a dog" page, where upon creation I can continue to select a pickup date and time
+      * If I selected a dog, I will be directed to the pickup schedule page
+
+    As a user
+    I want to be able to edit or delete my scheduled pickup appointment
+    If I have a scheduling conflict
+
+      Acceptance Criteria:
+      * On my account page I should see my schedule appointments
+      * Each appointment should have the option to be edited or deleted
+      * If I edit my appointment, the page displays the changes made
+      * I will have the option to delete(cancel) singular appointments, or clear the entire schedule
+      * If an appointment is deleted within 24 hours of the scheduled pickup time, I am charged a late cancellation fee
+      * If I delete any of my appointments, the page displays the changes made
+
+    As an admin
+    I want to be able to view my customers' details
+    So I can be informed of any changes
+
+      Acceptance Criteria:
+      * On the admin account page, I should be able to see a list of customers
+      * Each customer should be a link, that leads me to a page that shows their info, dogs, and scheduled pickups
+
+    As an admin
+    I want to be able to edit or delete my customers' details
+    So I can make changes on their behalf if they request it
+
+      Acceptance Criteria:
+      * In each customer's detail page, I should be able to edit or delete information related to their account, dogs, or appointments
+      * If I edit a customer's information, the page displays the changes
+      * If I delete a customer's information, the page displays the changes
+
+    As an admin
+    I want to be able to track my company's business metrics
+    So I can track the company's progress
+
+      Acceptance Criteria:
+        * In the admin account profile page, there should be an option to check the business metrics
+        * Should I follow the link, I am brought to a page that displays that information
+        * I can edit or delete this information should I have to
+
+
+
+
+
 
 
 
