@@ -165,7 +165,9 @@ Last year, my brother started a company that provides a pick-up service for peop
         * Should I follow the link, I am brought to a page that displays that information
         * I can edit or delete this information should I have to
 
+## ER Diagrams
 
+![screen shot 2018-10-19 at 8 30 29 pm](https://user-images.githubusercontent.com/41710509/47249143-f404f980-d3dd-11e8-9bb3-f43f1665ac93.png)
 
 
 
